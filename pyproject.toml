@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "nosql-hw8"
+version = "0.1.0"
+description = ""
+authors = ["lana-sviatash <sviatash.s@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pymongo = {extras = ["srv", "tls"], version = "^4.5.0"}
+mongoengine = "^0.27.0"
+redis = "^5.0.1"
+redis-lru = "^0.1.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.9.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
